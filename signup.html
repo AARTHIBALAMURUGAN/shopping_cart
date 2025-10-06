@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .signup{
+            background-color:#1D232c ;
+            position: absolute;
+            left:33%;
+            top: 10%;
+            width: 30%;
+            color: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        .signup h1{
+            padding: 10px;
+            margin-left:30%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+        }
+        .para1{
+            padding: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            margin-left: 20%;
+        }
+
+        .signup input{
+            padding: 10px;
+            margin: 10px;
+            margin-left: 15%;
+            width: 60%;
+            color: white;
+            background: transparent;
+            border: none;
+            border-bottom:solid white;
+        }
+        .signup input:focus{
+            outline: none;
+        }
+        .signup button{
+            padding-left:50px;
+            padding-right: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 10px;
+            margin-left: 30%;
+            border-radius: 50px;
+            border: none;
+
+        }
+        .para{
+            padding: 10px;
+            color: white;
+            margin-left: 50px;
+        }
+        .para a{
+        color: aliceblue;
+        margin-left: 20px;}
+
+        @media screen and (max-width:600px) {
+            .signup{
+                width: 50%;
+                left: 20%;
+            }
+            .para{
+                margin-left: 30px;
+            }
+            .signup button{
+                margin-left: 73px;
+            }
+            .para1{
+                margin-left: 50px;
+            }
+             .signup h1{
+                margin-left: 83px;
+             }
+            
+            
+        }
+
+    
+    </style>
+
+    <div class="signup">
+        <h1>Signup</h1>
+        <p class="para1">Create your Account</p>
+        <input type="text" placeholder="username">
+        <br>
+        <input type="password" placeholder="password">
+        <br>
+        <input type="password" placeholder="Confirm Password">
+        <br>
+        <button type="submit">Signup</button>
+        <p class="para">Already have an account?<a href="login.html">login</a></p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="maximo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <style>
+        .contact{
+            background-color:#1D232c;
+            position: absolute;
+            top: 16%;
+            left: 33%;
+            width: 30%;
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+        }
+        .contact h1{
+            padding: 20px;
+            margin-left:25%;
+        }
+        .contact input{
+            margin: 10px;
+            margin-left: 13%;
+            width: 70%;
+            padding: 20px;
+            border-radius: 20px;
+            border: none;
+            
+        }
+        .contact button{
+            margin: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left:38%;
+            border-radius: 50px;
+        }
+        @media screen and (max-width:600px) {
+            
+            .contact{
+                width: 30%;
+                left: 30%;
+
+            }
+            .contact input{
+                margin-left: 5%;
+            }
+            .contact h1{
+               margin-left: -16px;
+            }
+            .contact button{
+                margin-left: 17%;
+            }
+            .side-nav{
+                width: 20%;
+                border-radius: 10px;
+                top: 50px;
+                
+            
+            }
+        }
+    </style>
+    <nav class="navbar">
+        <h1>Maximo Shop</h1>
+        
+    <div class="nav-link">
+        <p class="links"><a href="maximo.html">Home</a></p>
+        <p class="links"><a href="collection.html">Collections</a></p>
+        <p class="links"><a href="contact.html">Contact</a></p>
+        <p class="links"><a href="login.html">Login</a></p>
+<p class="links"><a href="signup.html">Signup</a></p>
+    </div>
+    <div class="nav-menu" onclick="shownav()">
+        <i class="fa-solid fa-bars"> </i>
+       
+    </div>
+    </nav>
+
+    <div class="side-nav">
+        <p style="text-align: right;" onclick="closenav()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        
+    <div class="side-nav-link">
+        <p class="side-links"><a href="maximo.html">Home</a></p>
+        <p class="side-links"><a href="collection.html">Collections</a></p>
+        <p class="side-links"><a href="contact.html">Contact</a></p>
+        <p class="side-links"><a href="login.html">Login</a></p>
+<p class="side-links"><a href="signup.html">Signup</a></p>
+    </div>
+    </div>
+
+    <div class="contact">
+        <h1>Contact  Us</h1>
+        <input type="text" placeholder="Name">
+        <br>
+        <input type="email" placeholder="Email">
+        <br>
+        <input placeholder="Message">
+        <br>
+        <button type="submit">Send</button>
+
+    </div>
+
+    <script src="maximo.js"></script>
+</body>
+</html>
